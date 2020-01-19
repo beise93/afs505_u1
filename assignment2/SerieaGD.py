@@ -1,0 +1,5 @@
+print("Juventus goal difference", 37 - 18)
+print("Inter Milan goal difference", 40 - 16)
+print("Lazio goal difference", 46 - 18)
+print("Atalanta goal difference", 49 - 26)
+print("Roma goal difference", 34 - 13)

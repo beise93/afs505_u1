@@ -1,0 +1,266 @@
+PS C:\Users\Brian> python ex1.py
+C:\Users\Brian\AppData\Local\Programs\Python\Python38-32\python.exe: can't open file 'ex1.py': [Errno 2] No such file or directory
+PS C:\Users\Brian> python ex1. py
+C:\Users\Brian\AppData\Local\Programs\Python\Python38-32\python.exe: can't open file 'ex1.': [Errno 2] No such file or directory
+PS C:\Users\Brian> python ex1.py
+C:\Users\Brian\AppData\Local\Programs\Python\Python38-32\python.exe: can't open file 'ex1.py': [Errno 2] No such file or directory
+PS C:\Users\Brian> cd Documents/WSU/afs505_u1/
+PS C:\Users\Brian\Documents\WSU\afs505_u1> ls
+
+
+    Directory: C:\Users\Brian\Documents\WSU\afs505_u1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/16/2020  11:46 AM                assignment1
+d-----        1/16/2020   7:39 PM                assignment2
+d-----        1/16/2020  11:18 AM                assignment3
+d-----        1/16/2020  11:18 AM                assignment4
+d-----        1/16/2020  11:18 AM                assignment5
+d-----        1/16/2020  11:18 AM                project
+-a----        1/16/2020  11:24 AM             13 README.md
+
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1> cd assignment 2
+Set-Location : A positional parameter cannot be found that accepts argument '2'.
+At line:1 char:1
++ cd assignment 2
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1> cd assignment2
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> ls
+
+
+    Directory: C:\Users\Brian\Documents\WSU\afs505_u1\assignment2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/16/2020   7:38 PM            198 ex1.py
+
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex1.py
+Hello World!
+Hello Again
+I like typing this.
+This is fun.
+Yay! Printing.
+I'd much rather you 'not'.
+I "said" do not touch this.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex1.py
+Hello World!
+Hello Again
+I like typing this.
+This is fun.
+Yay! Printing.
+I'd much rather you 'not'.
+I "said" do not touch this.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex1.py
+Hello World!
+Hello Again
+I like typing this.
+This is fun.
+Yay! Printing.
+I'd much rather you 'not'.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex1.py
+Hello World!
+Hello Again
+I like typing this.
+This is fun.
+Yay! Printing.
+I'd much rather you 'not'.
+I "said" do not touch this.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> pythong ex2.py
+pythong : The term 'pythong' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ pythong ex2.py
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pythong:String) [], CommandNotFoundExcepti
+   on
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex2.py
+I could have code like this.
+This will run.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex3.py
+I wil now count my chickens:
+Hens 30.0
+Roosters 97
+Now I will count the eggs:
+6.75
+Is it true that 3 + 2 < 5 - 7?
+False
+What is 3 + 2? 5
+What is 5 - 7? -2
+Oh, that's why it's False.
+How about some more.
+Is it greater? True
+Is it greater or equal? True
+Is it less or equal? False
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex3.py
+I wil now count my chickens:
+Hens 30.0
+Roosters 97.0
+Now I will count the eggs:
+6.75
+Is it true that 3 + 2 < 5 - 7?
+False
+What is 3 + 2? 5.0
+What is 5 - 7? -2.0
+Oh, that's why it's False.
+How about some more.
+Is it greater? True
+Is it greater or equal? True
+Is it less or equal? False
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python SerieaGD.py
+Juventus goal difference 19
+Inter Milan goal difference 24
+Lazio goal difference 28
+Atalanta goal difference 23
+Roma goal difference 21
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex4.py
+There are 100 cars available.
+There are only 30 drivers available.
+There will be 70 empty cars today.
+We can transport 120.0 people today.
+We have 90 to carpool today.
+We need to put about 3.0 in each car.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+Let's talk about Zed A. Shaw.
+He's 74 inches tall.
+He's 180 pounds heavy.
+Actually that's not too heavy.
+He's got Blue eyes and Brown hair.
+His teeth are usually White depending on the coffee.
+If I add 35, 74, and 180 I get 289.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+If I add 35, 74, and 180 I get 289.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+  File "ex5.py", line 21
+    print"%r pounds equals %r kilos." % (pounds, kilos)
+         ^
+SyntaxError: invalid syntax
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+  File "ex5.py", line 21
+    print(f{pounds} = {kilos})
+           ^
+SyntaxError: invalid syntax
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+  File "ex5.py", line 21
+    print(f{pounds} = {kilos})
+           ^
+SyntaxError: invalid syntax
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+Let's talk about Zed A. Shaw.
+He's 74 inches tall.
+He's 180 pounds heavy.
+Actually that's not too heavy.
+He's got Blue eyes and Brown hair.
+His teeth are usually White depending on the coffee.
+If I add 35, 74, and 180 I get 289.
+180 pounds equals 81.6466266 kilos.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex5.py
+Let's talk about Zed A. Shaw.
+He's 74 inches tall.
+He's 180 pounds heavy.
+Actually that's not too heavy.
+He's got Blue eyes and Brown hair.
+His teeth are usually White depending on the coffee.
+If I add 35, 74, and 180 I get 289.
+180 pounds equals 81.6466266 kilos.
+74 inches equals 187.96 centimeters.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+SyntaxError: EOL while scanning string literal
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex6.py
+  File "ex6.py", line 7
+    "
+    ^
+SyntaxError: EOL while scanning string literal
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex6.py
+Traceback (most recent call last):
+  File "ex6.py", line 6, in <module>
+    y = f"Those who know {binary} and those who {do_}."
+NameError: name 'do_' is not defined
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex6.py
+Traceback (most recent call last):
+  File "ex6.py", line 6, in <module>
+    y = f"Those who know {binary} and those who {do_}."
+NameError: name 'do_' is not defined
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex6.py
+There are 10 types of people.
+Those who know binary and those who don't.
+I said: There are 10 types of people.
+I also said: 'Those who know binary and those who don't.'
+Isn't that joke so funny?! False
+This is the left side of...a string with a right side.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex7.py
+Mary had a little lamb
+Its fleece was white as snow.
+And everywhere that Mary went.
+..........
+Cheese Burger
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex8.py
+1 2 3 4
+one two three four
+True False False True
+{} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}
+Try your Own text Maybe a poem Or a song about fear
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex9.py
+Here are the days:  Mon Tue Wed Thu Fri Sat Sun
+Here are the months:  Jan
+Feb
+Mar
+Apr
+May
+Jun\nJul
+Aug
+)
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex9.py
+Here are the days:  Mon Tue Wed Thu Fri Sat Sun
+Here are the months:  Jan
+Feb
+Mar
+Apr
+May
+Jun\nJul
+Aug
+
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2> python ex9.py
+Here are the days:  Mon Tue Wed Thu Fri Sat Sun
+Here are the months:  Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment2>
