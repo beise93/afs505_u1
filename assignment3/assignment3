@@ -1,0 +1,250 @@
+(base) C:\Users\Brian\Documents\WSU\afs505_u1>cd assignment3
+
+(base) C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>ex15.py ex15_sample.txt
+Here's your file ex15_sample.txt:
+This is stuff I typed into a file
+It is really cool stuff.
+Lots and lots of fun to have in here.
+
+Type the filename again:
+> ex15_sample.txt
+This is stuff I typed into a file
+It is really cool stuff.
+Lots and lots of fun to have in here.
+(base) C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>ex15.py ex15_sample.txt
+Here's your file ex15_sample.txt:
+This is stuff I typed into a file
+It is really cool stuff.
+Lots and lots of fun to have in here.
+(base) C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>ex15.py ex15_sample.txt
+Type the filename again:
+> ex15_sample.txt
+This is stuff I typed into a file
+It is really cool stuff.
+Lots and lots of fun to have in here.
+
+
+(base) C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+>> C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex16.py
+Traceback (most recent call last):
+  File "ex16.py", line 3, in <module>
+    script, filename = argv
+ValueError: not enough values to unpack (expected 2, go
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex16.py test.txt
+We're going to erase test.txt.
+If you don't want that, hit CTRL-C (^C).
+If you do want that, hit RETURN.
+?
+Opening the file...
+Traceback (most recent call last):
+  File "ex16.py", line 12, in <module>
+    target = open(filename, 'W')
+ValueError: invalid mode: 'W'
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex16.py test.txt
+We're going to erase test.txt.
+If you don't want that, hit CTRL-C (^C).
+If you do want that, hit RETURN.
+?
+Opening the file...
+Truncating the file. Goodbye!
+Now I'm going to ask you for three lines.
+line 1: Mary had a little lamb
+line 2: Its fleece was white as snow
+line 3: It was also tasty
+I'm going to write these to the file.
+And finally, we close it.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex16.py test.txt
+We're going to erase test.txt.
+If you don't want that, hit CTRL-C (^C).
+If you do want that, hit RETURN.
+?
+Opening the file...
+Truncating the file. Goodbye!
+Now I'm going to ask you for three lines.
+line 1: Mary had a little lamb
+line 2: Its fleece was white as snow
+line 3: It was also tasty
+I'm going to write these to the file.
+And finally, we close it.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> echo "This is a test file." > test.txt
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> cat test.txt
+This is a test file.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+
+  File "<fstring>", line 1
+    (len{indata))
+        ^
+SyntaxError: invalid syntax
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+Copying from test.txt to new_file.txt
+The input file is 46 bytes long
+Does the output file exist? False
+Ready, hit RETURN to continue, CTRL-C to abort.
+
+Alright, all done.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+  File "ex17.py", line 8
+    print(f"Does the output file exist? {exists(to_file)"})
+                                                         ^
+SyntaxError: invalid syntax
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+Does the output file exist? True
+Alright, all done.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex17.py test.txt new_file.txt
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex18.py
+arg1: Zed, arg2: Shaw
+arg1: Zed, arg2: Shaw
+arg1: First!
+I got nothin'.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex19.py
+We can just give the function numbers directly:
+You have 20 cheeses!
+You have 30 boxes of crackers!
+Man that's enough for a party!
+Get a blanket.
+
+OR, we can use variables from out script:
+You have 10 cheeses!
+You have 50 boxes of crackers!
+Man that's enough for a party!
+Get a blanket.
+
+We can even do math inside too:
+You have 30 cheeses!
+You have 11 boxes of crackers!
+Man that's enough for a party!
+Get a blanket.
+
+And we can combine the two, variables and math:
+You have 110 cheeses!
+You have 1050 boxes of crackers!
+Man that's enough for a party!
+Get a blanket.
+(base) PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex20.py test.txt
+First let's print the whole file:
+
+This is line 1
+This is line 2
+This is line 3
+
+Now let's rewind, kind of like a tape.
+Let's print three lines:
+1 This is line 1
+
+2 This is line 2
+
+3 This is line 3
+
+(base) PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+(base) PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex20.py test.txt
+First let's print the whole file:
+
+This is line 1
+This is line 2
+This is line 3
+
+Now let's rewind, kind of like a tape.
+Let's print three lines:
+1 This is line 1
+
+2 This is line 2
+
+3 This is line 3
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex21.py
+Let's do some math with just functions!
+ADDING 30 + 5
+SUBTRACTING 78 - 4
+MULTIPLYING 90 * 2
+DIVIDING 100 / 2
+Age: 35, Height: 74, Weight: 180, IQ: 50.0
+Here is a puzzle.
+Traceback (most recent call last):
+  File "ex21.py", line 31, in <module>
+    what = add(age, subtract(height, multiply(Weight, divide(iq, 2))))
+NameError: name 'Weight' is not defined
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex21.py
+Let's do some math with just functions!
+ADDING 30 + 5
+SUBTRACTING 78 - 4
+MULTIPLYING 90 * 2
+DIVIDING 100 / 2
+Age: 35, Height: 74, Weight: 180, IQ: 50.0
+Here is a puzzle.
+DIVIDING 50.0 / 2
+MULTIPLYING 180 * 25.0
+SUBTRACTING 74 - 4500.0
+ADDING 35 + -4426.0
+That becomes:  -4391.0 Can you do it by hand?
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+
+#Exercise 28
+>>> True and True
+True
+>>> False and True
+False
+>>> 1 == 1 and 2 == 1
+False
+>>> "test" == "test"
+True
+>>> 1 == 1 or 2 != 1
+True
+>>> true and 1 == 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> True and 1 == 1
+True
+>>> False and 0 != 0
+False
+>>> True or 1 == 1
+True
+>>> "test" == "testing"
+False
+>>> 1 != 0 and 2 == 1
+False
+>>> "test" != "testing"
+True
+>>> "test" == 1
+False
+>>> Not(True and False)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Not' is not defined
+>>> not (True and False)
+True
+>>> not (1 == 1 and 0 != 1)
+False
+>>> not (10 == 1 or 1000 == 1000)
+False
+>>> not (1 != 10 or 3 == 4)
+False
+>>> not ("testing" == "testing" and "zed" == "cool guy")
+True
+>>> 1 == 1 and ("testing" == 1 or 1 == 0)
+False
+>>> "chunky" == "bacon" and (not (3 == 4 or 3 == 3))
+False
+>>> 3 == 3 and (not("testing" == "testing" or "python" == "fun"))
+False
+>>>
+PS C:\Users\Brian> cd Documents\WSU\afs505_u1\assignment3
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex29.py
+Too many cats! The world is doomed!
+The world is dry!
+People are greater than or equal to dogs.
+People are less than or equal to dogs.
+People are dogs.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3> python ex30.py
+We should take the cars.
+Maybe we could take the trucks.
+Alright, let's just take the trucks.
+PS C:\Users\Brian\Documents\WSU\afs505_u1\assignment3>
