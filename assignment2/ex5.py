@@ -22,3 +22,5 @@ print("%r pounds equals %r kilos." % (pounds, kilos))
 inches = 74
 centimeters = inches * 2.54
 print("%r inches equals %r centimeters." % (inches, centimeters))
+
+print("pounds equals kilos." % (pounds, kilos))
