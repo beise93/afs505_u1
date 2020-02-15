@@ -29,7 +29,7 @@ def main():
     #first input on command line is the file name
 
     #number of ticks is equal to the second command which is converted to an integer
-    ticks = int(argv[1])
+
     #number of staring cells is the third argv
 
 
@@ -54,6 +54,7 @@ def main():
 
         else:
             new_grid = make_move(new_grid, cols, rows)
+
         print_grid(rows, cols, new_grid)
         loop_count += 1
 
@@ -75,7 +76,7 @@ def init_grid(coords, grid):
         rows, cols = coords[i].split(":")
         rows = int(rows)
         cols = int(cols)
-        grid[rows-1][cols-1] = 1
+        grid[rows - 1][cols - 1] = 1
         #copies the grid
 
 def make_move(grid, cols, rows):
@@ -93,9 +94,9 @@ def make_move(grid, cols, rows):
     new_grid=[[0]*(cols+1) for i in range(rows+1)]
     #for the element in the row list
     for i in range(rows):
-        rows = int(rows)#for the j element in the column list
+        #for the j element in the column list
         for j in range(cols):
-            cols = int(cols)#sets upper left neighbor
+            #sets upper left neighbor
             upper_left = grid[i-1][j-1]
             #sets upper neighbor
             upper = grid[i-1][j]
@@ -103,8 +104,7 @@ def make_move(grid, cols, rows):
             upper_right = grid[i-1][j+1]
             #sets mid left neighbor
             mid_left = grid[i][j-1]
-            #sets mid neighbor
-            mid = grid[i][j]
+
             #sets mid right neighbor
             mid_right = grid[i][j+1]
             #sets lower left neighbor
@@ -115,24 +115,26 @@ def make_move(grid, cols, rows):
             lower_right = grid[i][j+1]
             #sets on the on number of neighbors to the sum of the defined variables
 
-            on_nbs = upper_left+upper+upper_right+mid_left+mid+mid_right+lower_left+lower+lower_right
+            on_nbs = upper_left+upper+upper_right+mid_left+mid_right+lower_left+lower+lower_right
             #loops through the lists and sets cell off if on_nbs is less than 2
-            if grid[i][j] == 1 and on_nbs < 2:
+            if grid[i][j] == 1 and on_nbs <2:
                 new_grid[i][j] = 0
             #loops through the lists and sets cell on if on_nbs is 2 or 3
-            if grid[i][j] == 1 and on_nbs == 2 or on_nbs == 3:
+            elif grid[i][j] == 1 and on_nbs == 2:
+                new_grid[i][j] = 1
+            elif grid[i][j] == 1 and on_nbs == 2 or on_nbs == 3:
                 new_grid[i][j] = 1
             #loops through the lists and sets cell off if on_nbs is greater than 3
-            if grid[i][j] == 1 and on_nbs > 3:
+            elif grid[i][j] == 1 and on_nbs > 3:
                 new_grid[i][j] = 0
             #loops through the lists and sets the cell on if on_nbs is 3
-            if grid[i][j] == 0 and on_nbs == 3:
+            elif grid[i][j] == 0 and on_nbs == 3:
                 new_grid[i][j] = 1
 
 
     #returns the newgrid given the rules
-    return new_grid[i][j]
-def print_grid(grid, rows, cols):
+    return new_grid
+def print_grid(rows, cols, grid):
     """
     The subsequent grid to be displayed as the game runs its ticks.
 
