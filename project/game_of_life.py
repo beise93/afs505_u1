@@ -8,7 +8,7 @@
 
 
 ..moduleauthor:: Brian Eisenbarth brian.eisenbarth@wsu.edu
-..modulereviewer:: Matthew Brousil
+..modulereviewer:: Matthew Brousil Grade on intial review 58/100
 """
 
 
